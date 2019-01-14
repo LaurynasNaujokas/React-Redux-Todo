@@ -20,7 +20,6 @@ class GameDetails extends Component {
 function mapStateToProps(state) {
     return {
         game: state.activeGame
-        
     };
 }
 
