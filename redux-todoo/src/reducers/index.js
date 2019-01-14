@@ -1,12 +1,13 @@
 import { combineReducers } from 'redux';
 import GamesList from './GamesList.js';
-import ActiveGameReducer from './Reducer-game-selected';
+import MoviesList from './MoviesList.js';
+import ActiveGameReducer from './reducerActiveGame';
 
 
 const allReducers = combineReducers({
     games : GamesList,
-    activeGame : ActiveGameReducer
-    
+    activeGame : ActiveGameReducer,
+    movies: MoviesList
 });
 
 export default allReducers;

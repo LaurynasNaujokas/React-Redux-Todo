@@ -9,8 +9,8 @@ createGameList(){
     return this.props.games.map((game) =>{
         return(
         <li key={game.id}
-         onClick={() => this.props.selectUser(game)}>
-         {game.id} 
+         onClick={() => this.props.gameSelected(game)}>
+         <h4>{game.id} - {game.name}</h4>
         </li>
         );
     });
@@ -26,7 +26,7 @@ createGameList(){
 }
 function mapStateToProps(state) {
     return {
-        users: state.users
+        games: state.games
     };
 }
 
