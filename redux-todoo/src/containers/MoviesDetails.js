@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 
 class MoviesDetails extends Component{
     render(){
-        if(!this.props.movies){
+        console.log("movie data:", this.props.movie);
+        if(!this.props.movie){
             return(<div>Select a movies..</div>)
         }
         return(

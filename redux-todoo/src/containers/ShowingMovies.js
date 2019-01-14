@@ -34,7 +34,7 @@ function mapStateToProps(state){
 }
 
 function matchDispatchToProps(dispatch){
-    bindActionCreators({movieSelected : movieSelected}, dispatch);
+    return bindActionCreators({movieSelected : movieSelected }, dispatch);
 }
 
 export default connect(mapStateToProps, matchDispatchToProps) (ShowingMovies);
