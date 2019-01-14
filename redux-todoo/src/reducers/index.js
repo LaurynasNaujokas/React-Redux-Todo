@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
-import todosReducer from './todosReducer.js';
-import todosList from './todosList.js';
+import GamesList from './GamesList.js';
+import ActiveGameReducer from './Reducer-game-selected';
+
 
 const allReducers = combineReducers({
-    todos : todosReducer,
-    todosCollection: todosList
+    games : GamesList,
+    activeGame : ActiveGameReducer
+    
 });
 
 export default allReducers;
