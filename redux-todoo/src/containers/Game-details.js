@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-
 class GameDetails extends Component {
     render(){
         console.log("data: ", this.props.game);
@@ -16,7 +15,6 @@ class GameDetails extends Component {
             </div>
         )
     }
-    
 } 
 
 function mapStateToProps(state) {
@@ -25,7 +23,5 @@ function mapStateToProps(state) {
         
     };
 }
-
-
 
 export default connect(mapStateToProps) (GameDetails);
